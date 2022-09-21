@@ -1,4 +1,12 @@
 .navbar{
     width: 100%;
-    border: 1px solid black;
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        
+        &__buttons{
+            display: flex;
+        }
+    }    
 }
