@@ -1,0 +1,10 @@
+.navbarbutton{
+    
+    &__link{
+        text-decoration: none;
+        
+        &:visited{
+            color: unset;
+        }
+    }
+}
