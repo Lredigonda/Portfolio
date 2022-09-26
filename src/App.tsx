@@ -1,12 +1,16 @@
-import Navbar from './app-components/navbar';
-import './App.css';
-import Homepage from './pages/home-page';
+import Navbar from "./app-components/navbar";
+import "./App.scss";
+import Homepage from "./pages/home-page";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Homepage />
+    <div className="app">
+      <div className="app__wrapper">
+        <Navbar />
+      </div>
+      <div className="app__wrapper__content">
+        <Homepage />
+      </div>
     </div>
   );
 }
