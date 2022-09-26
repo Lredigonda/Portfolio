@@ -1,0 +1,15 @@
+.navbarbutton {
+  padding: 0;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  color: #345e72;
+
+  &__link {
+    text-decoration: none;
+
+    &:visited {
+      color: unset;
+    }
+  }
+}
