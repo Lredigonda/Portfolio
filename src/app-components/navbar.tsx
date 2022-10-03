@@ -15,6 +15,7 @@ function Navbar() {
         <NavbarButton
           url="/public/index.html"
           className="navbar__container__home"
+          external
         >
           <h2 className="navbar__container__home__title">LR.</h2>
         </NavbarButton>
@@ -25,6 +26,7 @@ function Navbar() {
             url=""
             icon={faUser}
             className="navbar__container__buttons__about"
+            external
           />
 
           <NavbarButton
@@ -32,6 +34,7 @@ function Navbar() {
             url=""
             icon={faFolderOpen}
             className="navbar__container__buttons__projects"
+            external
           />
 
           <NavbarButton
@@ -39,12 +42,14 @@ function Navbar() {
             url=""
             icon={faIdCard}
             className="navbar__container__buttons__contact"
+            external
           />
 
           <NavbarButton
             url="https://github.com/Lredigonda/Portfolio"
             icon={faCodeBranch}
             className="navbar__container__buttons__repository"
+            external
           />
         </nav>
       </div>
