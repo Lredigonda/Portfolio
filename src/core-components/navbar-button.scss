@@ -11,5 +11,10 @@
     &:visited {
       color: unset;
     }
+
+    &__icon {
+      padding-right: 0.25rem;
+      font-size: 1rem;
+    }
   }
 }
