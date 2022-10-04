@@ -7,8 +7,6 @@ function App() {
     <div className="app">
       <div className="app__wrapper">
         <Navbar />
-      </div>
-      <div className="app__wrapper__content">
         <Homepage />
       </div>
     </div>
