@@ -4,13 +4,26 @@ import {
   faFolderOpen,
   faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
-// import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { useState } from "react";
+
 import NavbarButton from "../core-components/navbar-button";
 import "./navbar.scss";
 
 function Navbar() {
+  const [navColour, updateNavbar] = useState(false);
+
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
   return (
-    <header className="navbar">
+    <header className={`navbar `}>
       <div className="navbar__container">
         <NavbarButton
           url="/public/index.html"
