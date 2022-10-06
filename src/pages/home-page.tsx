@@ -1,7 +1,12 @@
+import AboutMe from "../app-components/about-me";
+import HomePanel from "../app-components/home-panel";
+import "./home-page.scss";
+
 function Homepage() {
   return (
-    <div>
-      <h1>Beta React Portfolio</h1>
+    <div className="home-page">
+      <HomePanel />
+      <AboutMe />
     </div>
   );
 }
