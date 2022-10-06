@@ -1,6 +1,8 @@
 import Navbar from "./app-components/navbar";
-import "./App.scss";
 import Homepage from "./pages/home-page";
+
+import "./App.scss";
+import Footer from "./app-components/footer";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <div className="app__wrapper">
         <Navbar />
         <Homepage />
+        <Footer />
       </div>
     </div>
   );
