@@ -9,6 +9,7 @@ import LinkedinLogo from "../assets/png-logos/iconmonstr-linkedin-1-24.png";
 import GitHubLogo from "../assets/png-logos/iconmonstr-github-1-24.png";
 import Separator from "../core-components/separator";
 import "./footer.scss";
+import DarkModeButton from "../core-components/darkmode-button";
 
 function Footer() {
   return (
@@ -69,9 +70,7 @@ function Footer() {
             <p>Copyright® 2022</p>
           </div>
           <div className="footer__bottom__right">
-            <button className="footer__darktheme-button">
-              <FontAwesomeIcon icon={faMoon} />
-            </button>
+            <DarkModeButton />
             <button className="footer__translate-button">translate</button>
           </div>
         </div>
