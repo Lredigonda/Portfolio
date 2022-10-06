@@ -13,7 +13,7 @@ function Navbar() {
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 30) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
@@ -23,7 +23,7 @@ function Navbar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <header className={`navbar `}>
+    <header className={`navbar ${navColour == true ? "sticky" : ""} `}>
       <div className="navbar__container">
         <NavbarButton
           url="/public/index.html"
