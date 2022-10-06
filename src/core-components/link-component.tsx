@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Children } from "react";
 import { Link } from "react-router-dom";
 import "./link-component.scss";
 
 interface LinkComponentProps {
   url: string;
-  text: string;
+  text?: string;
+  children?: JSX.Element;
   elipsis?: boolean;
   className?: string;
   isExternal?: boolean;
@@ -13,6 +14,7 @@ interface LinkComponentProps {
 function LinkComponent({
   url,
   text,
+  children,
   elipsis,
   className,
   isExternal,
@@ -24,10 +26,12 @@ function LinkComponent({
       target="_blank"
       rel="noreferrer"
     >
+      {children}
       {text}
     </a>
   ) : (
     <Link className={`link ${elipsis ? "elipsis" : ""} ${className}`} to={url}>
+      {children}
       {text}
     </Link>
   );
