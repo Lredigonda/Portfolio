@@ -1,15 +1,14 @@
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./footer.scss";
+
 import LinkComponent from "../core-components/link-component";
+import DarkModeButton from "../core-components/darkmode-button";
+import Separator from "../core-components/separator";
 
 import TwitterLogo from "../assets/png-logos/iconmonstr-twitter-1-24.png";
 import InstagramLogo from "../assets/png-logos/iconmonstr-instagram-11-24.png";
 import FacebookLogo from "../assets/png-logos/iconmonstr-facebook-6-24.png";
 import LinkedinLogo from "../assets/png-logos/iconmonstr-linkedin-1-24.png";
 import GitHubLogo from "../assets/png-logos/iconmonstr-github-1-24.png";
-import Separator from "../core-components/separator";
-import "./footer.scss";
-import DarkModeButton from "../core-components/darkmode-button";
 
 function Footer() {
   return (
@@ -24,7 +23,7 @@ function Footer() {
           </div>
           <div className="footer__top__right">
             <LinkComponent
-              className="footer__contact-button"
+              className="footer__contact-button__instagram"
               url="https://www.instagram.com/leo.redigonda/"
               isExternal
             >
@@ -32,7 +31,7 @@ function Footer() {
             </LinkComponent>
 
             <LinkComponent
-              className="footer__contact-button"
+              className="footer__contact-button__twitter"
               url="https://twitter.com/LeoRedigonda"
               isExternal
             >
@@ -40,7 +39,7 @@ function Footer() {
             </LinkComponent>
 
             <LinkComponent
-              className="footer__contact-button"
+              className="footer__contact-button__facebook"
               url="https://www.facebook.com/Leeo.Redi/"
               isExternal
             >
@@ -48,7 +47,7 @@ function Footer() {
             </LinkComponent>
 
             <LinkComponent
-              className="footer__contact-button"
+              className="footer__contact-button__linkedin"
               url="https://www.linkedin.com/in/leonel-redigonda-809116194/"
               isExternal
             >
@@ -56,7 +55,7 @@ function Footer() {
             </LinkComponent>
 
             <LinkComponent
-              className="footer__contact-button"
+              className="footer__contact-button__github"
               url="https://github.com/Lredigonda"
               isExternal
             >
@@ -67,11 +66,13 @@ function Footer() {
         <Separator className="footer__separator" />
         <div className="footer__bottom">
           <div className="footer__bottom__left">
-            <p>Copyright® 2022</p>
+            <p>Copyright ® 2022</p>
           </div>
           <div className="footer__bottom__right">
+            <button className="footer__translate-button">
+              <b>{`ES`}</b>
+            </button>
             <DarkModeButton />
-            <button className="footer__translate-button">translate</button>
           </div>
         </div>
       </div>

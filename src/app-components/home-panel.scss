@@ -15,12 +15,14 @@
       font-size: 2rem;
       font-weight: 400;
       margin: 0;
+      padding-left: 5rem;
     }
 
     &__subtitle {
       font-size: 2.5rem;
       font-weight: 400;
       margin: 1rem 0;
+      padding-left: 5rem;
 
       & b {
         color: #5694b2;
@@ -31,6 +33,7 @@
       font-weight: 400;
       font-size: 1.5rem;
       margin: 0;
+      padding-left: 5rem;
 
       & b {
         color: #345e72;
@@ -41,10 +44,12 @@
   &__image-container {
     flex: 1;
     height: 35rem;
+    display: flex;
+    align-items: center;
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: auto;
   }
 }
