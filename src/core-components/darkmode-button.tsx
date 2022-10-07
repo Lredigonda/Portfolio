@@ -1,5 +1,6 @@
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 import "../core-components/darkmode-button.scss";
 
@@ -8,11 +9,17 @@ export interface darkmodeButtonProps {
 }
 
 function DarkModeButton(className: darkmodeButtonProps) {
-  const theme = "light";
+  const [theme, setTheme] = useState(true);
+  const toggleTheme = () => {
+    setTheme(!theme);
+  };
   return (
-    <button className={`darkmode-button ${className ? className : ``}`}>
+    <button
+      className={`darkmode-button ${className ? className : ``}`}
+      onClick={toggleTheme}
+    >
       <FontAwesomeIcon
-        icon={theme === "light" ? faMoon : faSun}
+        icon={theme === true ? faMoon : faSun}
         className="darkmode-button__icon"
       />
     </button>

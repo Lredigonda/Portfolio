@@ -9,6 +9,7 @@ import InstagramLogo from "../assets/png-logos/iconmonstr-instagram-11-24.png";
 import FacebookLogo from "../assets/png-logos/iconmonstr-facebook-6-24.png";
 import LinkedinLogo from "../assets/png-logos/iconmonstr-linkedin-1-24.png";
 import GitHubLogo from "../assets/png-logos/iconmonstr-github-1-24.png";
+import TranslateButton from "../core-components/translate-button";
 
 function Footer() {
   return (
@@ -69,9 +70,7 @@ function Footer() {
             <p>Copyright ® 2022</p>
           </div>
           <div className="footer__bottom__right">
-            <button className="footer__translate-button">
-              <b>{`ES`}</b>
-            </button>
+            <TranslateButton />
             <DarkModeButton />
           </div>
         </div>
