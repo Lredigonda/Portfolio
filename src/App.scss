@@ -1,8 +1,8 @@
 .app {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2f2;
-
+  // background-color: #dde9ef;
+  background: linear-gradient(160deg, #f7fafc 0%, #b4d0dd 100%);
   &__wrapper {
     width: 100%;
     display: flex;
@@ -10,4 +10,14 @@
     justify-content: center;
     align-items: center;
   }
+}
+::-webkit-scrollbar-track {
+  background: #1b313c;
+}
+::-webkit-scrollbar-thumb {
+  background: #5694b2;
+  border-radius: 12px;
+}
+::-webkit-scrollbar {
+  width: 7px;
 }

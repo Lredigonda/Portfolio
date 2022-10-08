@@ -3,9 +3,6 @@
   position: sticky;
   top: 0;
   background-color: transparent;
-  box-shadow: 0 0.5rem 1.2rem rgba(189, 197, 209, 0.2);
-  margin-bottom: 5rem;
-
   transition: all 0.3s ease-out 0s;
 
   &__container {
@@ -20,6 +17,10 @@
         font-weight: 400;
         padding-left: 3rem;
         color: #5694b2;
+
+        &:hover {
+          filter: drop-shadow(1px 1px 5px #a7a7a7);
+        }
       }
     }
 
@@ -50,5 +51,5 @@
 }
 .sticky {
   transition: all 0.3s ease-out 0s;
-  background-color: #333335a9;
+  background-color: #15262fd5;
 }
