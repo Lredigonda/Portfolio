@@ -19,7 +19,7 @@ function Footer() {
           <div className="footer__top__left">
             <h2 className="footer__container__logo">LR.</h2>
             <h3 className="footer__container__title">
-              Powered and Designed by <b>Leonel Redigonda</b>
+              Designed and Developed by <b>Leonel Redigonda</b>
             </h3>
           </div>
           <div className="footer__top__right">

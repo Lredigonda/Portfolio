@@ -1,8 +1,8 @@
 .app {
   margin: 0;
   padding: 0;
-  background-color: #dde9ef;
-
+  // background-color: #dde9ef;
+  background: linear-gradient(160deg, #f7fafc 0%, #b4d0dd 100%);
   &__wrapper {
     width: 100%;
     display: flex;
