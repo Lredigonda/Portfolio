@@ -23,39 +23,32 @@ function Navbar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <header className={`navbar ${navColour == true ? "sticky" : ""} `}>
+    <header className={`navbar ${navColour === true ? "sticky" : ""} `}>
       <div className="navbar__container">
-        <NavbarButton
-          url="/public/index.html"
-          className="navbar__container__home"
-          external
-        >
+        <NavbarButton url="/" className="navbar__container__home">
           <h2 className="navbar__container__home__title">LR.</h2>
         </NavbarButton>
 
         <nav className="navbar__container__buttons">
           <NavbarButton
             text="Sobre mi"
-            url=""
+            url="/about"
             icon={faUser}
             className="navbar__container__buttons__about"
-            external
           />
 
           <NavbarButton
             text="Proyectos"
-            url=""
+            url="/projects"
             icon={faFolderOpen}
             className="navbar__container__buttons__projects"
-            external
           />
 
           <NavbarButton
-            text="Contacto"
-            url=""
+            text="Curriculum"
+            url="/curriculum"
             icon={faIdCard}
             className="navbar__container__buttons__contact"
-            external
           />
 
           <NavbarButton
