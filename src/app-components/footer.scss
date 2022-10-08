@@ -49,6 +49,11 @@
     &__github {
       margin-right: 1rem;
 
+      & img {
+        width: 1rem;
+        height: 1rem;
+      }
+
       &:hover {
         filter: drop-shadow(1px 1px 5px #5a5a5a);
       }
