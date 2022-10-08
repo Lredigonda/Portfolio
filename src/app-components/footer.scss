@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #252a2d;
+  background-color: #15262f;
   align-items: center;
   margin-top: 10rem;
 
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 
     &__logo {
       color: #5694b2;
@@ -62,9 +62,5 @@
     &__github {
       margin-right: 0;
     }
-  }
-
-  &__separator {
-    border-color: #5a5a5a;
   }
 }

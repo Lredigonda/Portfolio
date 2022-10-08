@@ -37,7 +37,6 @@ function NavbarButton({
         </a>
       ) : (
         <Link
-          target="_blank"
           rel="noreferrer"
           to={`${url}`}
           className={`navbarbutton__link ${className ? className : ""}`}

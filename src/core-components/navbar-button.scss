@@ -3,12 +3,17 @@
   margin: 0.5rem;
   display: flex;
   justify-content: center;
-  color: #345e72;
+  color: #5694b2;
 
   &__link {
     text-decoration: none;
 
     &:visited {
+      color: #5694b2;
+    }
+
+    &:hover {
+      transition: 0.3s;
       color: #345e72;
     }
 
