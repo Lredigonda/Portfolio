@@ -5,7 +5,9 @@ function PersonalInfo() {
   return (
     <div className="personal-info">
       <div className="personal-info__container">
-        <h1 className="personal-info__title">about me</h1>
+        <h1 className="personal-info__title">
+          Conoce más <b>sobre mi</b>
+        </h1>
         <p className="personal-info__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat
           itaque, dignissimos perferendis nulla possimus pariatur explicabo

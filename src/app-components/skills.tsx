@@ -15,7 +15,9 @@ function Skills() {
   return (
     <section className="skills">
       <div className="skills__container">
-        <h2 className="skills__container__title">some skills</h2>
+        <h1 className="skills__container__title">
+          Mis <b>conocimientos</b>
+        </h1>
         <div className="skills__container__lang">
           <Card className="skills__language">
             <Html />
@@ -41,7 +43,9 @@ function Skills() {
         </div>
       </div>
       <div className="skills__container">
-        <h2 className="skills__container__title">some tools</h2>
+        <h1 className="skills__container__title">
+          <b>Herramientas</b> que utilizo
+        </h1>
         <div className="skills__container__tools">
           <Card className="skills__tools">
             <Linux />
