@@ -11,7 +11,7 @@ function HomePanel() {
             Soy <b>Leonel Redigonda</b>
           </h2>
           <h3 className="homepanel__title-container__info">
-            Front End <b>Developer</b>
+            Desarrollador <b>Front End</b>
           </h3>
         </div>
         <div className="homepanel__image-container">

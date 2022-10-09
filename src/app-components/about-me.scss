@@ -20,6 +20,16 @@
     }
   }
 
+  &__info-1,
+  &__info-2,
+  &__info-3 {
+    font-size: 1.25rem;
+
+    & b {
+      color: #345e72;
+    }
+  }
+
   &__image-container {
     flex: 1;
     display: flex;
