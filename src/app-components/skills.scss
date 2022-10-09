@@ -1,0 +1,36 @@
+.skills {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &__lang {
+      display: flex;
+    }
+    &__tools {
+      display: flex;
+    }
+  }
+
+  &__language,
+  &__tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 9rem;
+    height: 9rem;
+    background-color: #1b313c;
+    & svg {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  &__tools {
+    flex: unset;
+  }
+}
