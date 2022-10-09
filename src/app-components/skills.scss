@@ -12,6 +12,7 @@
     &__title {
       font-size: 2rem;
       font-weight: 400;
+
       & b {
         color: #345e72;
       }
@@ -30,7 +31,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 9rem;
     height: 9rem;
     background-color: #15262f31;
@@ -46,7 +46,7 @@
       width: 10rem;
       height: 10rem;
       border-color: #5694b2;
-      box-shadow: 2px 2px 10px #5694b2;
+      box-shadow: 0px 0px 1px #749cb1;
     }
   }
 }
